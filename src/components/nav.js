@@ -1,7 +1,3 @@
-import { Inter } from '@next/font/google'
-
-const inter = Inter({ subsets: ['latin'] })
-
 export default function Navigation() {
   return (
     <nav id="header" className="fixed w-full z-30 top-0 text-white">
