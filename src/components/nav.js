@@ -4,7 +4,7 @@ export default function Navigation() {
       <div className="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 py-2">
         <div className="pl-4 flex items-center">
           <a className="toggleColour text-white no-underline hover:no-underline font-bold text-2xl lg:text-4xl" href="#">
-            AppLabs Development Team - Test
+            AppLabs
           </a>
         </div>
         <div className="block lg:hidden pr-4">
