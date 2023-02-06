@@ -23,8 +23,8 @@ export default function MainContent() {
                         <img src="laptop.jpg" />
                     </div>
                 </div>
-                <div class="flex flex-wrap flex-col-reverse sm:flex-row">
-                    <div class="w-full sm:w-1/2 p-6 mt-6">
+                <div className="flex flex-wrap flex-col-reverse sm:flex-row">
+                    <div className="w-full sm:w-1/2 p-6 mt-6">
                         <img src="robot.png" />
                     </div>
                     <div className="w-full sm:w-1/2 p-6 mt-6">
