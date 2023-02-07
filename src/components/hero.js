@@ -17,7 +17,7 @@ export default function Hero() {
                         />
                     </h1>
                     <p className="leading-normal text-2xl mb-8">
-                        We are amid a digital revolution and companies need to innovate in order to thrive and stay relevant.  AppLabs provide cutting edge software solutions that will fill the technical gaps in your business.
+                        We are amid a digital revolution, and companies must innovate to thrive and stay relevant. AppLabs provides cutting-edge software solutions that will fill the technical gaps in your business.
                     </p>
                     <button className="mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
                         Let's start the conversation
