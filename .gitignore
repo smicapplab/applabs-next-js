@@ -53,3 +53,5 @@ Thumbs.db
 .next
 .next/*
 .env.*
+.next/cache/webpack/client-development/*
+*.pack

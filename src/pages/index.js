@@ -9,6 +9,7 @@ import Footer from '@/components/footer'
 
 export default function Home() {
 
+
   const scriptLoaded = () => {
     window.addEventListener("scroll", handleScroll);
   }
@@ -28,7 +29,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Applabs</title>
+        <title>Quicker Forms</title>
         <meta name="description" content="Software development company in the Philippines" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />

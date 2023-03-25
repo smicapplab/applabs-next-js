@@ -7,17 +7,17 @@ export default function Hero() {
                 <div className="flex flex-col w-full md:w-2/5 justify-center items-start text-center md:text-left">
                     <p className="uppercase tracking-loose w-full">Software Consulting and Development</p>
                     <h1 className="my-4 text-5xl font-bold leading-tight">
-                        We develop reliable, scalable, and secure software solutions for your
+                        The next generation online and offline form filler for your 
                         <Typewriter
                             options={{
-                                strings: ['Startup Business.', 'Security Agency.', 'E-commerce Business.'],
+                                strings: ['Visa Application.', 'Driver\'s license renewal.', 'Job Application.'],
                                 autoStart: true,
                                 loop: true,
                             }}
                         />
                     </h1>
                     <p className="leading-normal text-2xl mb-8">
-                        We are amid a digital revolution, and companies must innovate to thrive and stay relevant. AppLabs provides cutting-edge software solutions that will fill the technical gaps in your business.
+                        We are amid a digital revolution, and companies must innovate to thrive and stay relevant. Quicker Forms provides cutting-edge software solutions that will fill the technical gaps in your business.
                     </p>
                     <button className="mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
                         Let's start the conversation
