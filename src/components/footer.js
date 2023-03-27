@@ -6,7 +6,7 @@ export default function Footer() {
                 <div className="w-full flex flex-col md:flex-row py-6">
                     <div className="flex-1 mb-6 text-black">
                         <a className="text-pink-600 no-underline hover:no-underline font-bold text-2xl lg:text-4xl" href="#">
-                            Quicker Forms
+                        Quickerforms
                         </a>
                     </div>
                     <div className="flex-1">

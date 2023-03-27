@@ -29,7 +29,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Quicker Forms</title>
+        <title>Quickerforms</title>
         <meta name="description" content="Software development company in the Philippines" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
