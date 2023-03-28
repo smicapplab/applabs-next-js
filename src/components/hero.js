@@ -32,9 +32,9 @@ export default function Hero() {
             allowed by the form recipient, Quickerforms can even submit the
             forms for you!
           </p>
-          <button className="mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
+          {/* <button className="mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
             Let's start the conversation
-          </button>
+          </button> */}
         </div>
         <div className="w-full md:w-3/5 py-6 text-center">
           <img className="w-full md:w-4/5 z-50" src="hero.png" />
