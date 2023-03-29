@@ -8,7 +8,7 @@ export default function Hero() {
           <p className="uppercase tracking-loose w-full">
             Making your life easier
           </p>
-          <h1 className="my-4 text-5xl font-bold leading-tight">
+          <h1 className="my-4 text-4xl font-bold leading-tight">
             The next generation online and offline form filler for your
             <Typewriter
               options={{
@@ -22,7 +22,7 @@ export default function Hero() {
               }}
             />
           </h1>
-          <p className="leading-normal text-2xl mb-8">
+          <p className="leading-normal text-2xl mb-8 mr-8">
             No need to keep inputting all your info every time you submit another
             application form for your driver's license renewal, passport, travel
             visas and hundreds more. Quickerforms takes care of that for you by
