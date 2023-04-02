@@ -1,0 +1,53 @@
+import { Document, Image, Page, StyleSheet } from "@react-pdf/renderer";
+
+export default function Preview() {
+  const styles = StyleSheet.create({
+    page: {
+      flex: 1,
+      backgroundColor: "red",
+      //backgroundImage: `url(${logo})`,
+      backgroundImage:
+        "url('https://media.geeksforgeeks.org/wp-content/uploads/rk.png')",
+      backgroundSize: "cover",
+      fontFamily: "Helvetica",
+      fontSize: 11,
+      paddingTop: 30,
+      paddingLeft: 50,
+      paddingRight: 50,
+      lineHeight: 1.5,
+      flexDirection: "column",
+    },
+    pageBackground: {
+      position: "absolute",
+      minWidth: "100%",
+      minHeight: "100%",
+      display: "block",
+      height: "100%",
+      width: "100%",
+    },
+    section: {
+      margin: 10,
+      padding: 10,
+      flexGrow: 1,
+    },
+  });
+
+  return (
+    <div className="overflow-hidden bg-white shadow sm:rounded-lg h-full bg-red-600">
+      <div className="px-4 py-5 sm:px-6">
+        <h3 className="text-base font-semibold leading-6 text-gray-900">
+          Preview
+        </h3>
+        <Document>
+          <Page size="A4" className="w-full h-full">
+            <Image src="/forms/lto-license.png" />
+            <Image
+              src="http://imgur.com/nd3yf1Q.png"
+              style={styles.pageBackground}
+            />
+          </Page>
+        </Document>
+      </div>
+    </div>
+  );
+}

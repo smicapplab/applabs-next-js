@@ -1,0 +1,8 @@
+.formDiv{
+    position: relative
+}
+
+.labels{
+    position: absolute;
+    padding: 5px;
+}

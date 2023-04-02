@@ -34,7 +34,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main>
+      <main style={{ background: "linear-gradient(90deg, #d53369 0%, #daae51 100%)" }}>
         <Navigation />
         <Hero />
         <MainContent />
