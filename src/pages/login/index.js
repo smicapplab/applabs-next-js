@@ -21,7 +21,7 @@ export default function Login() {
     });
     const content = await rawResponse.json();
     if (content.success) {
-      router.push("/profile");
+      router.push("/forms");
     } else {
       setHasError(true);
     }
@@ -78,18 +78,23 @@ export default function Login() {
                 ref={refPassword}
                 className="mb-2 rounded-xl w-full p-4 border-gray-800 border-2 focus:outline-none focus:ring-1 focus:border-transparent placeholder-gray-400"
                 placeholder="Enter your password"
-                type="text"
+                type="password"
                 name="spouseName"
               />
             </div>
             <div>
               <button
                 onClick={validatePassCode}
-                className="group relative p-4 flex w-full justify-center rounded-xl bg-indigo-600 text-sm font-semibold text-white hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                className="group relative p-4 flex w-full justify-center rounded-xl bg-indigo-600 text-sm font-semibold text-white hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 mb-16"
               >
                 <span className="absolute inset-y-0 left-0 flex items-center pl-3"></span>
                 Sign in
               </button>
+            </div>
+            <div  className="p-4 bg-slate-200">
+              <h4>Test Account</h4>
+              <p>User: applicant</p>
+              <p>Password: qu1ck3rf0rms!!!</p>
             </div>
           </div>
         </div>

@@ -14,9 +14,10 @@ export default function MainContent() {
               Step 1:
             </h3>
             <p className="text-gray-600 mb-4">
-              Choose in the app a form you need to fill up by using the search
-              function. If a form is not yet in our database, take a picture of
-              the form and upload using the steps provided
+              Choose in the app a form you need to fill up by clicking on one of
+              the forms or by using the search function. If a form is not yet in
+              our database, take a picture of the form and upload using the
+              steps provided
             </p>
             <h3 className="text-3xl text-gray-800 font-bold leading-none mb-3">
               Step 2:
@@ -42,9 +43,10 @@ export default function MainContent() {
             </h3>
             <p className="text-gray-600 mb-4">
               App will submit form for you digitally, or will give instructions
-              on how to submit digitally or provide you a pdf that can be
-              printed for physical submission if that is the requirement of the
-              receiving party
+              on how to submit digitally. For paper forms or digital forms that
+              are required to be submitted in paper form, Quickerforms will
+              provide you a pdf of the filled application form that can be
+              printed along with detailed instructions on the submission process
             </p>
           </div>
           <div className="w-full sm:w-1/2 p-6">
@@ -61,7 +63,8 @@ export default function MainContent() {
                 Your data is safe!
               </h3>
               <p className="text-gray-600 mb-4">
-              We keep your data safe by making it accessible and usable only by you and no one else, not even by us.
+                We keep your data safe by making it accessible and usable only
+                by you and no one else, not even by us.
               </p>
             </div>
           </div>

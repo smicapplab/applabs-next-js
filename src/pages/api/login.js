@@ -5,7 +5,6 @@ const passwordHc = "qu1ck3rf0rms!!!";
 
 export default function handler(req, res) {
   const body = req.body;
-  console.log({ body });
   const { userName, password } = body;
   if (userName === userNameHc && password === passwordHc) {
     res
