@@ -3,12 +3,14 @@ import styles from "./Preview.module.css";
 import formDataContext from "@/store/formDataContext";
 import dynamic from 'next/dynamic'
 import { useRouter } from "next/router";
+import { forms } from "@/data/form";
 
 export default function Preview() {
   const router = useRouter();
   const { id } = router.query;
+  const form = forms[id];
 
-  const DynamicHeader = dynamic(() => import(`../../components/formTemplate/${id}`), {
+  const DynamicHeader = dynamic(() => import(`../../components/formTemplate/${form.template}`), {
     ssr: false,
   })
 

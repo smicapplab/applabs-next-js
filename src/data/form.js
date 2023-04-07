@@ -1,5 +1,5 @@
 const forms = [
-  { name: "Driver's License", image: "/forms/lto-license.png", fields: [
+  { name: "Driver's License", template: "DriversLicense", image: "/forms/lto-license.png", fields: [
     { name: "firstName", label:"First Name", type: "text" },
     { name: "middleName", label:"Middle Name",  type: "text" },
     { name: "lastName", label:"Last Name",  type: "text" },
@@ -90,13 +90,14 @@ const forms = [
       { value: "Fair", label: "Fair" },
       { value: "Dark", label: "Dark" },
     ] },
-    { name: "birthPlace", label:"Birth Place",  type: "date" },
+    { name: "birthPlace", label:"Birth Place",  type: "text" },
     { name: "fathersName", label:"Father's Name",  type: "text" },
 
 
     { name: "mothersName", label:"Mother's Name",  type: "text" },
     { name: "spouseName", label:"Spouse Name",  type: "text" },
     { name: "employersBusinessName", label:"Employer's Business Name",  type: "text" },
+    { name: "employerContact", label:"Employer Contact",  type: "text" },
     { name: "employersBusinessAddress", label:"Employer's Business Address",  type: "text" },    
   ] },
 ];
