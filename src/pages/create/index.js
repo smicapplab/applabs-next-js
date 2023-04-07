@@ -7,7 +7,7 @@ import Preview from "../preview";
 export default function Profile() {
   const router = useRouter();
   const [tab, setTab] = useState(0);
-  const { id } = router.query;
+  const { id = 0 } = router.query;
   const form = forms[id];
 
   return (
