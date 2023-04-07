@@ -29,8 +29,8 @@ export default function Form({ form }) {
           {name}
         </h3>
         <div className="grid sm:grid-cols-2">
-          {fields.map((field) => (
-            <div className="p-2">
+          {fields.map((field, i) => (
+            <div className="p-2" key={i}>
               <label className="block text-sm font-medium leading-6 text-gray-900">
                 {field.label}
               </label>

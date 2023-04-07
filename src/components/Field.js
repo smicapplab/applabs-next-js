@@ -28,7 +28,7 @@ export default function Field({ field, valueChanged, formData }) {
           className="block w-full p-4 rounded-md border-0 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400"
         >
           {options.map((option) => (
-            <option value={option.value}>{option.label}</option>
+            <option key={option.value} value={option.value}>{option.label}</option>
           ))}
         </select>
       )}

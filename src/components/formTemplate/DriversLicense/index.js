@@ -29,12 +29,11 @@ export default function DriversLicense() {
           left: 15,
         }}
       >
-        <span style={{ letterSpacing: 15 }}>{formData.lastName || ""}</span>
+        <span style={{ letterSpacing: 12 }}>{`${formData.lastName.toUpperCase() || ""} `}</span>
+        <span style={{ letterSpacing: 13, paddingLeft:6 }}>{formData.firstName.toUpperCase() || ""}</span>
+        <span>,</span>
         <span style={{ padding: 10 }}></span>
-        <span style={{ letterSpacing: 15 }}>{formData.firstName || ""}</span>
-        <span style={{ padding: 5 }}>,</span>
-        <span style={{ padding: 15 }}></span>
-        <span style={{ letterSpacing: 13 }}>{formData.middleName || ""}</span>
+        <span style={{ letterSpacing: 12 }}>{formData.middleName.toUpperCase() || ""}</span>
       </div>
       <div
         className={`${styles.labels} `}
