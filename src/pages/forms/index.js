@@ -17,7 +17,7 @@ export default function Profile() {
           </h3>
           <div className="grid gap-4 lg:grid-cols-12 md:grid-cols-8 sm:grid-cols-6 grid-cols-6 pt-5">
             {forms.map((form, i) => (
-              <div key={i} className="w-full cursor-pointer" onClick={()=>openForm(i)}>
+              <div key={i} className="w-full cursor-pointer" onClick={(e)=>{ e.preventDefault(); openForm(i)}}>
                 <img src={form.image} alt={form.name} />
               </div>
             ))}
