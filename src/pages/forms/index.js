@@ -6,7 +6,7 @@ export default function Profile() {
 
   const openForm = (form) => {
     router.push(`/create?id=${form}`);
-  }
+  };
 
   return (
     <div className="sm:p-6 lg:10 p-2 ">
@@ -17,7 +17,14 @@ export default function Profile() {
           </h3>
           <div className="grid gap-4 lg:grid-cols-12 md:grid-cols-8 sm:grid-cols-6 grid-cols-6 pt-5">
             {forms.map((form, i) => (
-              <div key={i} className="w-full cursor-pointer" onClick={(e)=>{ e.preventDefault(); openForm(i)}}>
+              <div
+                key={i}
+                className="w-full cursor-pointer"
+                onClick={(e) => {
+                  e.preventDefault();
+                  openForm(i);
+                }}
+              >
                 <img src={form.image} alt={form.name} />
               </div>
             ))}
@@ -31,10 +38,23 @@ export default function Profile() {
           </h3>
           <div className="grid gap-4 lg:grid-cols-12 md:grid-cols-8 sm:grid-cols -6 grid-cols-6 pt-5">
             {forms.map((form, i) => (
-              <div key={i} className="w-full cursor-pointer" onClick={()=>openForm(i)}>
+              <div
+                key={i}
+                className="w-full cursor-pointer"
+                onClick={(e) => {
+                  e.preventDefault();
+                  openForm(i);
+                }}
+              >
                 <img src={form.image} alt={form.name} />
               </div>
             ))}
+            <div className="w-full cursor-pointer">
+              <img src="/forms/schengen-dis.png" alt="Schengen Visa" />
+            </div>
+            <div className="w-full cursor-pointer">
+              <img src="/forms/sss-dis.png" alt="Social Security System" />
+            </div>
           </div>
         </div>
       </div>
