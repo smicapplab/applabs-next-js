@@ -2,7 +2,7 @@ import formDataContext from "@/store/formDataContext";
 import Field from "./Field";
 import { useContext, useEffect } from "react";
 
-const defVal = { firstName: "John", middleName: "Doe" };
+const defVal = { firstName: "John", middleName: "Smith", lastName: "Doe" };
 
 export default function Form({ form }) {
   const { name, fields } = form;
