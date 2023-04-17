@@ -2,6 +2,8 @@ import formDataContext from "@/store/formDataContext";
 import Field from "./Field";
 import { useContext, useEffect } from "react";
 
+const defVal = { firstName: "John", middleName: "Doe" };
+
 export default function Form({ form }) {
   const { name, fields } = form;
   const { formData, setFormData } = useContext(formDataContext);
@@ -10,15 +12,18 @@ export default function Form({ form }) {
     const newData = {
       ...formData,
       [e.target.name]: e.target.value,
-    }
+    };
     setFormData(newData);
     localStorage.setItem("formData", JSON.stringify(newData));
   };
 
   useEffect(() => {
-    const cachedData = JSON.parse(localStorage.getItem("formData"))
-    if( cachedData ){
-      setFormData(cachedData);  
+    const cachedData = JSON.parse(localStorage.getItem("formData"));
+    if (cachedData) {
+      setFormData(cachedData);
+    } else {
+      setFormData(defVal);
+      localStorage.setItem("formData", JSON.stringify(defVal));
     }
   }, []);
 
@@ -35,7 +40,11 @@ export default function Form({ form }) {
                 {field.label}
               </label>
               <div className="relative rounded-md shadow-sm">
-                <Field field={field} valueChanged={valueChanged} formData={formData}/>
+                <Field
+                  field={field}
+                  valueChanged={valueChanged}
+                  formData={formData}
+                />
               </div>
             </div>
           ))}
