@@ -1,7 +1,7 @@
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
 
-const userNameHc = "applicant";
-const passwordHc = "qu1ck3rf0rms!!!";
+const userNameHc = "guest";
+const passwordHc = "guest";
 
 export default function handler(req, res) {
   const body = req.body;

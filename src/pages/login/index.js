@@ -93,8 +93,8 @@ export default function Login() {
             </div>
             <div  className="p-4 bg-slate-200">
               <h4>Test Account</h4>
-              <p>User: applicant</p>
-              <p>Password: qu1ck3rf0rms!!!</p>
+              <p>User: guest</p>
+              <p>Password: guest</p>
             </div>
           </div>
         </div>
